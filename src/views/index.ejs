@@ -4,6 +4,13 @@
   <h1>
     <%= title %>
   </h1>
+
+  <%- include("summary.ejs", {account : accounts.savings}); %> 
+
+  <%- include("summary.ejs", {account : accounts.checking}); %> 
+
+  <%- include("summary.ejs", {account : accounts.credit}); %>
+
   <a href="/profile">Profile</a>
   <a href="/transfer">Transfer</a>
 </div>
